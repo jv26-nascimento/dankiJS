@@ -10,15 +10,32 @@
     
     <script>
 
-        var num1 = prompt('digite um valor inicial')
+        var numero1 = parseInt(prompt('insira o primeiro número'));
 
-        var conta = prompt('que operação quer fazer?')
-        while(sinal != '+' && sinal != '-' && sinal != '*' && sinal != '/'){
-            conta = prompt('insira uma operaçao valida')
+        var numero2 = parseInt(prompt('insira o segundo número'));
+
+        var conta = prompt('que operação quer fazer?');
+
+        while(conta != '+' && conta != '-' && conta != '*' && conta !='/'){
+            alert('operação inválida');
+            conta = prompt('que operação quer fazer?');
         }
 
-        var num2 = ('digite um numero final')
+        var resultado = 0;
 
+        if(conta == '+'){
+            resultado = numero1 + numero2;
+        }else if(conta == '-'){
+            resultado = numero1 - numero2;
+        }else if(conta == '*'){
+            resultado = numero1 * numero2;
+        }else{
+            resultado = numero1 / numero2;
+        }
+
+        alert('o resultado é ' + resultado)
+
+        
 
     </script>
 
