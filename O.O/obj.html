@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        /* var objetos = [{
+            'nome':'joao',
+            'idade':17,
+            'profissao':'estudante',
+        },
+        {
+            'nome':'paulo',
+            'idade':17,
+            'profissao':'estudante',
+        },
+        {
+            'nome':'renan',
+            'idade':17,
+            'profissao':'estudante',
+        },
+        {
+            'nome':'tigas',
+            'idade':17,
+            'profissao':'estudante',
+        }
+        ];
+
+        alert(objetos[2].nome) */
+
+        /*function pessoa(){
+            this.nome = "guilherme";
+        }
+
+        var pessoa = new pessoa();
+
+        alert(pessoa.nome);*/
+
+        function Animal(nome,peso){
+            if(nome == undefined){
+                nome = "n/a"
+            }
+            if(peso == undefined){
+                peso = "n/a"
+            }
+            this.nome = nome;
+            this.peso = peso;
+        }
+
+        animal1 = new Animal("cachorro", "15kg");
+        animal2 = new Animal("gato", "8kg");
+
+        alert(animal1.peso);
+        alert(animal2.nome);
+
+    </script>
+    
+</body>
+</html>

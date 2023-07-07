@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+        class Animal{
+            constructor(nome,peso){
+                this.nome = nome;
+                this.peso = peso
+            }
+
+            printNome(){
+                return this.nome;
+            }
+            printPeso(){
+                return this.peso;
+            }
+        }
+
+        animal = new Animal('gato','10kg');
+
+        alert(animal.printNome());
+        alert(animal.printPeso());
+
+
+    </script>
+
+</body>
+</html>

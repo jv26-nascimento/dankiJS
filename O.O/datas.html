@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var date = new Date();
+
+        //alert(date.getDate()); - dia do mes
+        //alert(date.getDay()); - dia da semana
+        //alert(date.getFullYear()); - ano
+        //alert(date.getHours() + ":" + date.getMinutes()); - horario
+
+        //calculo da minha idade atual
+
+        var date1 = new Date('08/24/2005');
+        var date2 = new Date('07/06/2023');
+
+        var diferenca = (date2.getTime() - date1.getTime()) / (1000*3600*24*365);
+        alert(diferenca)
+
+
+
+    </script>
+    
+</body>
+</html>
